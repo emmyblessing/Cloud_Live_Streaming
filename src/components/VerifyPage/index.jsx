@@ -17,19 +17,19 @@ const VerifyPage = () => {
           <form>
             <div className="mb-6 mt-6 flex justify-between">
               <input type="text" name="pin1" id="pin1" maxlength="1" placeholder=""
-                className="w-1/6 mr-8 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
+                className="w-1/6 lg:mr-8 mr-2 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
               />
               <input type="text" name="pin2" id="pin2" maxlength="1" placeholder=""
-                className="w-1/6 mr-8 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
+                className="w-1/6 lg:mr-8 mr-2 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
               />
               <input type="text" name="pin3" id="pin3" maxlength="1" placeholder=""
-                className="w-1/6 mr-8 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
+                className="w-1/6 lg:mr-8 mr-2 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
               />
               <input type="text" name="pin4" id="pin4" maxlength="1" placeholder=""
-                className="w-1/6 mr-8 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
+                className="w-1/6 lg:mr-8 mr-2 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
               />
               <input type="text" name="pin5" id="pin5" maxlength="1" placeholder=""
-                className="w-1/6 mr-8 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
+                className="w-1/6 lg:mr-8 mr-2 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
               />
               <input type="text" name="pin6" id="pin6" maxlength="1" placeholder=""
                 className="w-1/6 px-4 py-3 border rounded-xl text-center focus:outline-none focus:border-blue-500"
