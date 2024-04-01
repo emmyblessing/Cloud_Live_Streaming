@@ -24,7 +24,7 @@ const HomePage = () => {
           <div className='mt-3'>
             <Link
               className="rounded-md bg-[#407BFF] px-10 py-1 text-lg font-medium text-white shadow"
-              to="/register"
+              to="/signup"
               >
               Register
             </Link> 
