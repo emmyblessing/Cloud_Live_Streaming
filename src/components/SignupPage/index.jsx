@@ -8,10 +8,10 @@ const SignupPage = () => {
   return (
     <>
       <div 
-        className="bg-cover flex h-screen flex-col justify-center items-center" 
+        className="bg-cover p-2 flex h-screen flex-col justify-center items-center" 
         style={{backgroundImage: `url(${Cam})`}}
       >
-        <div className='bg-[#407BFF]/[.2] lg:pl-12 lg:pr-12 p-8 rounded-2xl shadow-md w-1/2'>
+        <div className='bg-[#407BFF]/[.2] lg:pl-12 lg:pr-12 p-5 rounded-2xl shadow-md w-full lg:w-1/2'>
           <h2 className="text-3xl font-bold mb-4 text-white">Creating Account</h2>
           <form>
             <div className="mb-4">
