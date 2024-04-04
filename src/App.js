@@ -16,6 +16,8 @@ import Setup from './pages/Setup';
 import SystemSetup from './pages/SystemSetup';
 import PaymentDetails from './pages/PaymentDetails';
 import SetupCompleted from './pages/SetupCompleted';
+import LiveStream from './pages/LiveStream';
+import StreamView from './pages/StreamView';
 
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
           <Route path="/system" element={<SystemSetup />}/>
           <Route path="/paymentDetails" element={<PaymentDetails />}/>
           <Route path="/paymentSuccessful" element={<SetupCompleted />}/>
+          <Route path="/livestream" element={<LiveStream />}/>
+          <Route path="/streamView" element={<StreamView />}/>
         </Routes>
       </div>
     </>
