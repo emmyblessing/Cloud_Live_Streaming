@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import BgUser from '../../assets/img/bg-user.png';
 import Wallet from '../../assets/img/wallet.png';
+import WalletFade from '../../assets/img/wallet2.png';
 import Paypal from '../../assets/img/paypal.png';
+import PaypalSharp from '../../assets/img/paypal2.png';
 import { Link } from 'react-router-dom';
 import { ChevronDownIcon} from '@heroicons/react/24/outline'
 
@@ -58,7 +60,10 @@ const PaymentPage = () => {
                 } px-2 flex py-3 text-left w-full rounded-lg border-2 font-semibold`}
                 onClick={() => handleTabChange('bank')}
               >
-                <img src={Wallet} alt='Wallet' className='w-8'/>
+                { 
+                  activePaymentTab === 'bank' ? <img src={Wallet} alt='Wallet' className='w-8'/> :
+                  <img src={WalletFade} alt='Wallet' className='w-8'/>
+                }
                 <p className='ml-3'>Bank Card</p>
               </button>
               <button
@@ -67,7 +72,12 @@ const PaymentPage = () => {
                 } px-2 py-3 flex text-left w-full rounded-lg border-2 font-semibold`}
                 onClick={() => handleTabChange('paypal')}
               >
-                <img src={Paypal} alt='Paypal' className='w-8'/>
+                { 
+                  activePaymentTab === 'paypal' ? 
+                  <img src={PaypalSharp} alt='Paypal' className='w-8'/> :
+                  <img src={Paypal} alt='Paypal' className='w-8'/>
+                }
+                
                 <p className='ml-3'>Paypal</p>
               </button>
             </div>
@@ -132,7 +142,7 @@ const PaymentPage = () => {
                   <div className="mb-2 mr-3 w-full">
                     <Link to='/verifyNumber' className='cursor-pointer'>
                       <button type="button"
-                        className="w-full border-[#407BFF] text-[#407BFF] border-2 text-xl hover:text-white p-2 rounded-2xl font-bold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                        className="w-full border-[#407BFF] text-[#407BFF] border-2 text-lg hover:text-white p-2 rounded-2xl font-bold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
                         Back
                       </button>
                     </Link>
@@ -140,19 +150,44 @@ const PaymentPage = () => {
                   <div className="mb-2 w-full">
                     <Link to='/setup' className='cursor-pointer'>
                       <button type="button"
-                        className="w-full bg-[#407BFF] text-xl text-white p-2 rounded-2xl font-bold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                        className="w-full bg-[#407BFF] text-lg text-white p-2 rounded-2xl font-bold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
                         Continue
                       </button>
                     </Link>
                   </div>
                 </div>
-                
               </form>
             )}
           </div>
           {activePaymentTab === 'paypal' && (
             <div>
-              Paypal
+              <div className="mt-2">
+                <form>
+                  <label className='text-[#407BFF] text-sm font-semibold'>Email Address</label>
+                  <input type="text" id="email" name="email"
+                    className="mt-1 py-1.5 px-2 block w-full rounded border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
+                    placeholder='Your Email Address'
+                  />
+                  <div className='flex mt-4'>
+                    <div className="mb-2 mr-3 w-full">
+                      <Link to='/verifyNumber' className='cursor-pointer'>
+                        <button type="button"
+                          className="w-full border-[#407BFF] text-[#407BFF] border-2 text-lg hover:text-white p-2 rounded-2xl font-bold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                          Back
+                        </button>
+                      </Link>
+                    </div>
+                    <div className="mb-2 w-full">
+                      <Link to='/setup' className='cursor-pointer'>
+                        <button type="button"
+                          className="w-full bg-[#407BFF] text-lg text-white p-2 rounded-2xl font-bold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                          Continue
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           )}
         </div>

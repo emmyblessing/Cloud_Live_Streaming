@@ -22,7 +22,7 @@ const UserSpecPage = () => {
             </div>
             <div className="mb-2">
               <label className='text-[#407BFF] font-semibold'>Country</label>
-              <input type="country" id="country" name="country"
+              <input type="text" id="country" name="country"
                 className="mt-1 p-2 block w-full rounded-xl border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
                 placeholder='South Africa'
               />
@@ -67,7 +67,7 @@ const UserSpecPage = () => {
             <div className="mb-2">
               <Link to='/verifyNumber' className='cursor-pointer'>
                 <button type="button"
-                  className="w-full bg-[#407BFF] text-xl text-white p-2 rounded-2xl font-semibold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                  className="w-full bg-[#407BFF] text-lg text-white p-2 rounded-2xl font-semibold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
                   Continue
                 </button>
               </Link>
