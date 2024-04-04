@@ -13,6 +13,9 @@ import VerifyNumber from './pages/VerifyNumber';
 import Plan from './pages/Plan';
 import Payment from "./pages/Payment";
 import Setup from './pages/Setup';
+import SystemSetup from './pages/SystemSetup';
+import PaymentDetails from './pages/PaymentDetails';
+import SetupCompleted from './pages/SetupCompleted';
 
 
 function App() {
@@ -40,6 +43,9 @@ function App() {
           <Route path="/plan" element={<Plan />}/>
           <Route path="/payment" element={<Payment />}/>
           <Route path="/setup" element={<Setup />}/>
+          <Route path="/system" element={<SystemSetup />}/>
+          <Route path="/paymentDetails" element={<PaymentDetails />}/>
+          <Route path="/paymentSuccessful" element={<SetupCompleted />}/>
         </Routes>
       </div>
     </>

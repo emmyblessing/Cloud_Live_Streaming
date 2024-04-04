@@ -37,7 +37,7 @@ const VerifyNumberPage = () => {
             <div className="mb-6">
               <Link to='/plan' className='cursor-pointer'>
                 <button type="button"
-                  className="w-full bg-[#407BFF] text-xl text-white p-2 rounded-2xl font-semibold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                  className="w-full bg-[#407BFF] text-lg text-white p-2 rounded-2xl font-semibold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
                   Verify
                 </button>
               </Link>
