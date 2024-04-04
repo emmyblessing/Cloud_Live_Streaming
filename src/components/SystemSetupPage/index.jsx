@@ -100,7 +100,7 @@ const SystemSetupPage = () => {
                 </Link>
               </div>
               <div className="mb-2 w-full">
-                <Link to='/paymentDetails' className='cursor-pointer'>
+                <Link to='/livestream' className='cursor-pointer'>
                   <button type="button"
                     className="w-full bg-[#407BFF] text-lg text-white p-2 rounded-2xl font-bold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
                     Continue
