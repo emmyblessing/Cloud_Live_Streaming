@@ -79,14 +79,14 @@ const PaymentPage = () => {
                   <label className='text-[#407BFF] text-sm font-semibold'>Cardholder Name</label>
                   <input type="text" id="c-name" name="c-name"
                     className="mt-1 py-1.5 px-2 block w-full rounded border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                    value='Bong Richard'
+                    placeholder='Bong Richard'
                   />
                 </div>
                 <div className="">
                   <label className='text-[#407BFF] text-sm font-semibold'>Card Number</label>
                   <input type="text" id="c-number" name="c-number"
                     className="mt-1 py-1.5 px-2 block w-full rounded border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                    value='XXXX XXXX XXXX XXXX'
+                    placeholder='XXXX XXXX XXXX XXXX'
                   />
                 </div>
                 <div className='flex'>
@@ -94,14 +94,14 @@ const PaymentPage = () => {
                     <label className='text-[#407BFF] text-sm font-semibold'>Expiry Date</label>
                     <input type="date" id="date" name="date"
                       className="mt-1 py-1.5 px-2 block w-full rounded border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                      value='MM/YY'
+                      placeholder='MM/YY'
                     />
                   </div>
                   <div className="w-full">
                     <label className='text-[#407BFF] text-sm font-semibold'>CVV</label>
                     <input type="text" id="cvv" name="cvv"
                       className="mt-1 py-1.5 px-2 block w-full rounded border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                      value='XXX'
+                      placeholder='XXX'
                     />
                   </div>
                 </div>
@@ -110,14 +110,14 @@ const PaymentPage = () => {
                     <label className='text-[#407BFF] text-sm font-semibold'>City</label>
                     <input type="text" id="city" name="city"
                       className="mt-1 py-1.5 px-2 block w-full rounded border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                      value='MM/YY'
+                      placeholder='MM/YY'
                     />
                   </div>
                   <div className="w-full">
                     <label className='text-[#407BFF] text-sm font-semibold'>Zipcode</label>
                     <input type="text" id="zipcode" name="zipcode"
                       className="mt-1 py-1.5 px-2 block w-full rounded border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                      value='XXX'
+                      placeholder='XXX'
                     />
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const PaymentPage = () => {
                   <label className='text-[#407BFF] text-sm font-semibold'>Country</label>
                   <input type="text" id="c-name" name="c-name"
                     className="mt-1 py-1.5 px-2 block w-full rounded border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                    value='South Africa'
+                    placeholder='South Africa'
                   />
                 </div>
                 <div className='flex mt-4'>
@@ -138,7 +138,7 @@ const PaymentPage = () => {
                     </Link>
                   </div>
                   <div className="mb-2 w-full">
-                    <Link to='/verifyNumber' className='cursor-pointer'>
+                    <Link to='/setup' className='cursor-pointer'>
                       <button type="button"
                         className="w-full bg-[#407BFF] text-xl text-white p-2 rounded-2xl font-bold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
                         Continue

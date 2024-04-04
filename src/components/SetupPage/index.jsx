@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import BgUser from '../../assets/img/bg-user.png';
 
-const UserSpecPage = () => {
+const SetupPage = () => {
   return (
     <>
       <div 
@@ -17,35 +17,35 @@ const UserSpecPage = () => {
               <label className='text-[#407BFF] font-semibold'>Full Name</label>
               <input type="text" id="f-name" name="f-name"
                 className="mt-1 p-2 block w-full rounded-xl border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                placeholder='Bongs Richard'
+                value='Bongs Richard'
               />
             </div>
             <div className="mb-2">
               <label className='text-[#407BFF] font-semibold'>Country</label>
               <input type="country" id="country" name="country"
                 className="mt-1 p-2 block w-full rounded-xl border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                placeholder='South Africa'
+                value='South Africa'
               />
             </div>
             <div className="mb-2">
               <label className='text-[#407BFF] font-semibold'>City</label>
               <input type="text" id="city" name="city"
                 className="mt-1 p-2 block w-full rounded-xl border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                placeholder='Cape town'
+                value='Cape town'
               />
             </div>
             <div className="mb-2">
               <label className='text-[#407BFF] font-semibold'>Address</label>
               <input type="text" id="f-name" name="f-name"
                 className="mt-1 p-2 block w-full rounded-xl border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                placeholder='1, Freetown'
+                value='1, Freetown'
               />
             </div>
             <div className="mb-2">
               <label className='text-[#407BFF] font-semibold'>Postal/ZIP Code</label>
               <input type="text" id="postal" name="postal"
                 className="mt-1 p-2 block w-full rounded-xl border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                placeholder='43433'
+                value='43433'
               />
             </div>
             <div className="mb-4 flex">
@@ -53,14 +53,14 @@ const UserSpecPage = () => {
                 <label className='text-[#407BFF] font-semibold'>Country Code</label>
                 <input type="text" id="postal" name="postal"
                   className="mt-1 p-2 block w-full rounded-xl border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                  placeholder='+237'
+                  value='+237'
                 />
               </div>
               <div className='w-full mr-2'>
                 <label className='text-[#407BFF] font-semibold'>Phone number</label>
                 <input type="text" id="postal" name="postal"
                   className="mt-1 p-2 block w-full rounded-xl border-2 border-[#407BFF] focus:outline-none focus:border-blue-500"
-                  placeholder='1 234 456 667'
+                  value='1 234 456 667'
                 />
               </div>
             </div>
@@ -79,4 +79,4 @@ const UserSpecPage = () => {
   )
 }
 
-export default UserSpecPage;
+export default SetupPage;

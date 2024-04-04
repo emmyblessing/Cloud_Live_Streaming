@@ -12,6 +12,7 @@ import UserSpec from './pages/UserSpec';
 import VerifyNumber from './pages/VerifyNumber';
 import Plan from './pages/Plan';
 import Payment from "./pages/Payment";
+import Setup from './pages/Setup';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/verifyNumber" element={<VerifyNumber />}/>
           <Route path="/plan" element={<Plan />}/>
           <Route path="/payment" element={<Payment />}/>
+          <Route path="/setup" element={<Setup />}/>
         </Routes>
       </div>
     </>
