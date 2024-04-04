@@ -30,7 +30,7 @@ const LoginPage = () => {
               </div>
             </div>
             <div className="mb-6">
-              <Link to='/login' className='cursor-pointer'>
+              <Link to='/welcome' className='cursor-pointer'>
                 <button type="button"
                   className="w-full bg-[#407BFF] text-xl text-white p-2 rounded-2xl font-semibold hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
                   Login
