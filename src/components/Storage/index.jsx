@@ -76,24 +76,22 @@ function SidebarTabs() {
                 </div>
               ))}
             </div>
-            <div>
-              <div className="bg-gray-200 rounded-lg shadow-lg">
-                <div className="flex justify-between">
-                  <h1 className="text-lg font-bold mb-4 text-[#1A40B1]">Storage Status</h1>
-                  <p className="text-[#407BFF] text-sm">50% Used</p>
-                </div>
-                
-                <div className="w-full bg-gray-300 h-16 rounded-lg relative">
-                  <div
-                    className="absolute left-0 top-0 bg-green-500 h-full rounded-lg"
-                    style={{ width: '70%' }}
-                  ></div>
-                </div>
-                
-                <div className="flex justify-between">
-                  <p className="text-sm font-bold mb-4 text-[#407BFF]">Available: <b>32GB</b></p>
-                  <p className="text-[#407BFF] text-sm">Total: <b>64GB</b></p>
-                </div>
+            <div className="mt-8">
+              <div className="flex justify-between">
+                <h1 className="text-sm font-bold text-[#1A40B1]">Storage Status</h1>
+                <p className="text-[#407BFF] text-xs">50% Used</p>
+              </div>
+              
+              <div className="w-full mt-1 bg-gray-300 h-3 rounded-lg relative">
+                <div
+                  className="absolute left-0 top-0 bg-[#407BFF] h-full rounded-lg"
+                  style={{ width: '70%' }}
+                ></div>
+              </div>
+              
+              <div className="flex justify-between mt-1">
+                <p className="text-xs font-bold mb-4 text-[#407BFF]">Available: <b>32GB</b></p>
+                <p className="text-[#407BFF] text-xs">Total: <b>64GB</b></p>
               </div>
             </div>
           </div>
