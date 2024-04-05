@@ -18,6 +18,17 @@ import PaymentDetails from './pages/PaymentDetails';
 import SetupCompleted from './pages/SetupCompleted';
 import LiveStream from './pages/LiveStream';
 import StreamView from './pages/StreamView';
+import UserCompleted from './components/UserCompleted';
+import UserSpecEdit from './pages/UserSpecEdit';
+import ChangeSaved from './components/ChangeSaved';
+import PlanEdit from './pages/PlanEdit';
+import PaymentEdit from './pages/PaymentEdit';
+import PaymentSuccessful from './components/PaymentSuccessful';
+import PaymentDetailsEdit from './pages/PaymentDetailsEdit';
+import PaymentReservation from './pages/PaymentReservation';
+import FootageSuccess from './components/FootageSuccess';
+import RestoreCompleted from './components/RestoreCompleted';
+import BackupCompleted from './components/BackupCompleted';
 
 
 function App() {
@@ -41,15 +52,27 @@ function App() {
           <Route path="/login" element={<Login />}/>
           <Route path="/welcome" element={<Welcome />}/>
           <Route path="/userSpec" element={<UserSpec />}/>
+          <Route path="/editInfo" element={<UserSpecEdit />}/>
           <Route path="/verifyNumber" element={<VerifyNumber />}/>
           <Route path="/plan" element={<Plan />}/>
+          <Route path="/planEdit" element={<PlanEdit />}/>
           <Route path="/payment" element={<Payment />}/>
+          <Route path="/paymentReserve" element={<PaymentReservation />}/>
+          <Route path="/paymentEdit" element={<PaymentEdit />}/>
           <Route path="/setup" element={<Setup />}/>
           <Route path="/system" element={<SystemSetup />}/>
           <Route path="/paymentDetails" element={<PaymentDetails />}/>
+          <Route path="/paymentDetailsEdit" element={<PaymentDetailsEdit />}/>
           <Route path="/paymentSuccessful" element={<SetupCompleted />}/>
           <Route path="/livestream" element={<LiveStream />}/>
           <Route path="/streamView" element={<StreamView />}/>
+          {/* <Route path="/historyDetails" element={<H />}/> */}
+          <Route path="/userCompleted" element={<UserCompleted />}/>
+          <Route path="/changeSaved" element={<ChangeSaved />}/>
+          <Route path="/paymentSuccess" element={<PaymentSuccessful />}/>
+          <Route path="/footageSuccess" element={<FootageSuccess />}/>
+          <Route path="/restoreCompleted" element={<RestoreCompleted />}/>
+          <Route path="/backupCompleted" element={<BackupCompleted />}/>
         </Routes>
       </div>
     </>

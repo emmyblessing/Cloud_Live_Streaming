@@ -9,6 +9,9 @@ import {
   DocumentTextIcon 
 } from '@heroicons/react/24/outline';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import History from "../History";
+import Settings from "../Settings";
+import ClipsMore from "../ClipsMore";
 
 function SidebarTabs() {
   const [activeSidebarTab, setActiveSidebarTab] = useState("Livestream");
@@ -28,12 +31,18 @@ function SidebarTabs() {
   ];
 
   const sidebarTabContents = {
-    Livestream: <LiveStreamContent />,
+    Livestream: <div className={`${isSidebarOpen} ? 'hidden' : 'block' `}>
+      <LiveStreamContent />
+    </div>,
     "Configure Analytics": <p>This is the Configure Analytics tab content</p>,
     Insights: <p>This is the Insights tab content</p>,
-    "View Clips": <p>This is the View Clips tab content</p>,
-    History: <p>This is the History tab content</p>,
-    Settings: <p>This is the Settings tab content</p>,
+    "View Clips": <ClipsMore />,
+    History: <div className={`${isSidebarOpen} ? 'hidden' : 'block' `}>
+      <History />
+    </div>,
+    Settings: <div className={`${isSidebarOpen} ? 'hidden' : 'block' `}>
+      <Settings />
+    </div>,
   };
 
   const toggleSidebar = () => {

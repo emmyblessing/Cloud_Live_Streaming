@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import BgUser from '../../assets/img/bg-user.png';
 import { Link } from 'react-router-dom';
 
-const PlanPage = () => {
+const PlanEditPage = () => {
   const [activeTab, setActiveTab] = useState('monthly');
 
   const handleTabChange = (tab) => {
@@ -42,17 +42,17 @@ const PlanPage = () => {
                 <div className="border-2 border-[#1A40B1] p-4">
                   <h2 className="text-2xl font-bold text-[#1A40B1] text-center">Basic</h2>
                   <p className='text-center text-gray-500'>As low as</p>
-                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R303</h2>
+                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R263</h2>
                   <p className='text-center text-gray-500'>Per camera/month</p>
                   <div className='text-center mt-2'>
-                    <Link to='/payment' className='cursor-pointer text-center'>
+                    <Link to='/paymentEdit' className='cursor-pointer text-center'>
                       <button type="submit"
                         className="w-1/2 text-[#407BFF] border-2 text-lg border-blue-600 p-1 rounded-lg font-semibold hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 focus:text-white">
                         Get Started
                       </button>
                     </Link>
                   </div>
-                  <div className='text-center pl-2 lg:pl-6'>
+                  <div className='text-center pl-2 lg:pl-16'>
                     <div className="mt-2 space-y-2">
                       <label htmlFor="Option1" className="flex cursor-pointer gap-2">
                         <div className="flex items-center">
@@ -135,17 +135,17 @@ const PlanPage = () => {
                 <div className="border-2 border-[#1A40B1] p-4">
                   <h2 className="text-2xl font-bold text-[#1A40B1] text-center">Standard</h2>
                   <p className='text-center text-gray-500'>As low as</p>
-                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R378</h2>
+                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R329</h2>
                   <p className='text-center text-gray-500'>Per camera/month</p>
                   <div className='text-center mt-2'>
-                    <Link to='/payment' className='cursor-pointer text-center'>
+                    <Link to='/paymentEdit' className='cursor-pointer text-center'>
                       <button type="submit"
                         className="w-1/2 text-[#407BFF] border-2 text-lg border-blue-600 p-1 rounded-lg font-semibold hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 focus:text-white">
                         Get Started
                       </button>
                     </Link>
                   </div>
-                  <div className='text-center pl-2 lg:pl-6'>
+                  <div className='text-center pl-2 lg:pl-16'>
                     <div className="mt-2 space-y-2">
                       <label htmlFor="Option1" className="flex cursor-pointer gap-2">
                         <div className="flex items-center">
@@ -239,17 +239,17 @@ const PlanPage = () => {
                 <div className="border-2 border-[#1A40B1] p-4">
                   <h2 className="text-2xl font-bold text-[#1A40B1] text-center">Premium</h2>
                   <p className='text-center text-gray-500'>As low as</p>
-                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R413</h2>
+                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R359</h2>
                   <p className='text-center text-gray-500'>Per camera/month</p>
                   <div className='text-center mt-2'>
-                    <Link to='/payment' className='cursor-pointer text-center'>
+                    <Link to='/paymentEdit' className='cursor-pointer text-center'>
                       <button type="submit"
                         className="w-1/2 text-[#407BFF] border-2 text-lg border-blue-600 p-1 rounded-lg font-semibold hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 focus:text-white">
                         Get Started
                       </button>
                     </Link>
                   </div>
-                  <div className='text-center pl-2 lg:pl-6'>
+                  <div className='text-center pl-2 lg:pl-16'>
                     <div className="mt-2 space-y-2">
                       <label htmlFor="Option1" className="flex cursor-pointer gap-2">
                         <div className="flex items-center">
@@ -358,17 +358,17 @@ const PlanPage = () => {
                 <div className="border-2 border-[#1A40B1] p-4">
                   <h2 className="text-2xl font-bold text-[#1A40B1] text-center">Basic</h2>
                   <p className='text-center text-gray-500'>As low as</p>
-                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R263</h2>
+                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R303</h2>
                   <p className='text-center text-gray-500'>Per camera/month</p>
                   <div className='text-center mt-2'>
-                    <Link to='/payment' className='cursor-pointer text-center'>
+                    <Link to='/paymentEdit' className='cursor-pointer text-center'>
                       <button type="submit"
                         className="w-1/2 text-[#407BFF] border-2 text-lg border-blue-600 p-1 rounded-lg font-semibold hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 focus:text-white">
                         Get Started
                       </button>
                     </Link>
                   </div>
-                  <div className='text-center pl-2 lg:pl-6'>
+                  <div className='text-center pl-2 lg:pl-16'>
                     <div className="mt-2 space-y-2">
                       <label htmlFor="Option1" className="flex cursor-pointer gap-2">
                         <div className="flex items-center">
@@ -451,17 +451,17 @@ const PlanPage = () => {
                 <div className="border-2 border-[#1A40B1] p-4">
                   <h2 className="text-2xl font-bold text-[#1A40B1] text-center">Standard</h2>
                   <p className='text-center text-gray-500'>As low as</p>
-                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R329</h2>
+                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R378</h2>
                   <p className='text-center text-gray-500'>Per camera/month</p>
                   <div className='text-center mt-2'>
-                    <Link to='/payment' className='cursor-pointer text-center'>
+                    <Link to='/paymentEdit' className='cursor-pointer text-center'>
                       <button type="submit"
                         className="w-1/2 text-[#407BFF] border-2 text-lg border-blue-600 p-1 rounded-lg font-semibold hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 focus:text-white">
                         Get Started
                       </button>
                     </Link>
                   </div>
-                  <div className='text-center pl-2 lg:pl-6'>
+                  <div className='text-center pl-2 lg:pl-16'>
                     <div className="mt-2 space-y-2">
                       <label htmlFor="Option1" className="flex cursor-pointer gap-2">
                         <div className="flex items-center">
@@ -555,17 +555,17 @@ const PlanPage = () => {
                 <div className="border-2 border-[#1A40B1] p-4">
                   <h2 className="text-2xl font-bold text-[#1A40B1] text-center">Premium</h2>
                   <p className='text-center text-gray-500'>As low as</p>
-                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R359</h2>
+                  <h2 className="text-xl font-bold text-[#1A40B1] text-center">R413</h2>
                   <p className='text-center text-gray-500'>Per camera/month</p>
                   <div className='text-center mt-2'>
-                    <Link to='/payment' className='cursor-pointer text-center'>
+                    <Link to='/paymentEdit' className='cursor-pointer text-center'>
                       <button type="submit"
                         className="w-1/2 text-[#407BFF] border-2 text-lg border-blue-600 p-1 rounded-lg font-semibold hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 focus:text-white">
                         Get Started
                       </button>
                     </Link>
                   </div>
-                  <div className='text-center pl-2 lg:pl-6'>
+                  <div className='text-center pl-2 lg:pl-16'>
                     <div className="mt-2 space-y-2">
                       <label htmlFor="Option1" className="flex cursor-pointer gap-2">
                         <div className="flex items-center">
@@ -676,4 +676,4 @@ const PlanPage = () => {
   );
 };
 
-export default PlanPage;
+export default PlanEditPage;
