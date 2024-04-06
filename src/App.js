@@ -29,6 +29,7 @@ import PaymentReservation from './pages/PaymentReservation';
 import FootageSuccess from './components/FootageSuccess';
 import RestoreCompleted from './components/RestoreCompleted';
 import BackupCompleted from './components/BackupCompleted';
+import Support from './pages/Support';
 
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
           <Route path="/footageSuccess" element={<FootageSuccess />}/>
           <Route path="/restoreCompleted" element={<RestoreCompleted />}/>
           <Route path="/backupCompleted" element={<BackupCompleted />}/>
+          <Route path="/support" element={<Support />}/>
         </Routes>
       </div>
     </>

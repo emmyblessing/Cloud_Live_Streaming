@@ -5,8 +5,9 @@ import {
   DocumentArrowUpIcon, 
   DocumentCheckIcon,
   UserIcon,
+  Bars3Icon, 
+  XMarkIcon
 } from '@heroicons/react/24/outline';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Clips from "../Clips";
 import DownloadPage from "../Download";
 import RequestFootage from "../RequestFootage";
