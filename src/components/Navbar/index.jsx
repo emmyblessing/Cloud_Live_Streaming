@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../../assets/img/Logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation  } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -15,6 +15,19 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const location = useLocation();
+
+  // Array of paths where Navbar should be hidden
+  const hiddenPaths = ['/test'];
+
+  // Check if the current path is in hiddenPaths
+  const isHidden = hiddenPaths.includes(location.pathname);
+
+  // If the current path is in hiddenPaths, don't render the Navbar
+  if (isHidden) {
+    return null;
+  }
+
   return (
     <Disclosure as="nav" className="bg-[#cccccc]">
       {({ open }) => (
