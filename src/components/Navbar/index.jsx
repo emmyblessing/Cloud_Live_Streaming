@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Pricing', href: '/pricing', current: false },
-  { name: 'About Us', href: '/about', current: false },
+  { name: 'Pricing', href: '/plan', current: false },
+  { name: 'About Us', href: '/support', current: false },
 ]
 
 function classNames(...classes) {
