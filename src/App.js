@@ -30,6 +30,8 @@ import FootageSuccess from './components/FootageSuccess';
 import RestoreCompleted from './components/RestoreCompleted';
 import BackupCompleted from './components/BackupCompleted';
 import Support from './pages/Support';
+import Notification from './components/Notification';
+import Specifications from './components/Specifications';
 
 
 function App() {
@@ -75,6 +77,9 @@ function App() {
           <Route path="/restoreCompleted" element={<RestoreCompleted />}/>
           <Route path="/backupCompleted" element={<BackupCompleted />}/>
           <Route path="/support" element={<Support />}/>
+          <Route path="/notification" element={<Notification />}/>
+          <Route path="/account" element={<Specifications />}/>
+          <Route path="/upgrade" element={<Plan />}/>
         </Routes>
       </div>
     </>
