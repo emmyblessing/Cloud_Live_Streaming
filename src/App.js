@@ -35,16 +35,9 @@ import Specifications from './components/Specifications';
 
 
 function App() {
-  //const [showNav, setShowNav] = useState(true);
-
   return (
     <>
       <div >
-      {/* { showNav &&
-        <nav>
-          <Nav />
-        </nav>
-      }  */}
         <Nav />
         <Routes>        
           <Route path="/"  element={<Home />} />

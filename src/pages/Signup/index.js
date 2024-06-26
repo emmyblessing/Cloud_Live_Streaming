@@ -1,7 +1,7 @@
 import React from 'react'
 import SignupPage from '../../components/SignupPage';
 
-const Signup = () => {
+const Signup = () => { 
   return (
     <div>
       <SignupPage />
