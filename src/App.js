@@ -1,7 +1,7 @@
 //import React, { useState } from "react";
-import { Route, Routes } from 'react-router-dom';
+//import { Route, Routes } from 'react-router-dom';
 import Nav from "./pages/Nav";
-import Home from './pages/Home';
+/* import Home from './pages/Home';
 import About from './pages/About';
 import Verify from './pages/Verify';
 import Signup from './pages/Signup';
@@ -31,49 +31,17 @@ import RestoreCompleted from './components/RestoreCompleted';
 import BackupCompleted from './components/BackupCompleted';
 import Support from './pages/Support';
 import Notification from './components/Notification';
-import Specifications from './components/Specifications';
-
+import Specifications from './components/Specifications'; */
+import AppRoutes from './routes/route'; 
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <>
       <div >
         <Nav />
-        <Routes>        
-          <Route path="/"  element={<Home />} />
-          <Route path="/about" element={<About />}/>
-          <Route path="/signup" element={<Signup />}/>
-          <Route path="/verify" element={<Verify />}/>
-          <Route path="/createPassword" element={<CreatePassword />}/>
-          <Route path="/login" element={<Login />}/>
-          <Route path="/welcome" element={<Welcome />}/>
-          <Route path="/userSpec" element={<UserSpec />}/>
-          <Route path="/editInfo" element={<UserSpecEdit />}/>
-          <Route path="/verifyNumber" element={<VerifyNumber />}/>
-          <Route path="/plan" element={<Plan />}/>
-          <Route path="/planEdit" element={<PlanEdit />}/>
-          <Route path="/payment" element={<Payment />}/>
-          <Route path="/paymentReserve" element={<PaymentReservation />}/>
-          <Route path="/paymentEdit" element={<PaymentEdit />}/>
-          <Route path="/setup" element={<Setup />}/>
-          <Route path="/system" element={<SystemSetup />}/>
-          <Route path="/paymentDetails" element={<PaymentDetails />}/>
-          <Route path="/paymentDetailsEdit" element={<PaymentDetailsEdit />}/>
-          <Route path="/paymentSuccessful" element={<SetupCompleted />}/>
-          <Route path="/livestream" element={<LiveStream />}/>
-          <Route path="/streamView" element={<StreamView />}/>
-          {/* <Route path="/historyDetails" element={<H />}/> */}
-          <Route path="/userCompleted" element={<UserCompleted />}/>
-          <Route path="/changeSaved" element={<ChangeSaved />}/>
-          <Route path="/paymentSuccess" element={<PaymentSuccessful />}/>
-          <Route path="/footageSuccess" element={<FootageSuccess />}/>
-          <Route path="/restoreCompleted" element={<RestoreCompleted />}/>
-          <Route path="/backupCompleted" element={<BackupCompleted />}/>
-          <Route path="/support" element={<Support />}/>
-          <Route path="/notification" element={<Notification />}/>
-          <Route path="/account" element={<Specifications />}/>
-          <Route path="/upgrade" element={<Plan />}/>
-        </Routes>
+        <AppRoutes />
+        <ToastContainer />
       </div>
     </>
   );
